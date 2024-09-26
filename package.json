@@ -13,8 +13,8 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "gsap": "file:gsap-bonus.tgz",
     "embla-carousel-react": "^8.3.0",
+    "gsap": "file:gsap-bonus.tgz",
     "lucide-react": "^0.446.0",
     "next": "14.2.13",
     "react": "^18",
@@ -23,6 +23,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/gsap": "^3.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
