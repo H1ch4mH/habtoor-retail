@@ -38,10 +38,10 @@ export default function Home() {
   );
 }
 const HomeMessage = () => {
-  const refRoot = useRef();
-  const refH2One = useRef();
-  const refH2Two = useRef();
-  const refP2 = useRef();
+  const refRoot = useRef<HTMLParagraphElement>(null);
+  const refH2One = useRef<HTMLHeadingElement>(null);
+  const refH2Two = useRef<HTMLHeadingElement>(null);
+  const refP2 = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
