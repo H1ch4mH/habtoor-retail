@@ -45,7 +45,7 @@ const HomeMessage = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       gsap.from(refRoot.current, {
         opacity: 0,
         duration: 1,

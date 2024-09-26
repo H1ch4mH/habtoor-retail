@@ -34,7 +34,7 @@ const residences = [
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { options } = props;
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef] = useEmblaCarousel(options);
 
   return (
     <section className="embla">
