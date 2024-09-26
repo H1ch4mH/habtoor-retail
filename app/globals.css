@@ -74,7 +74,7 @@ body {
 }
 
 .embla {
-  max-width: 70rem;
+  max-width: 90rem;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
@@ -212,6 +212,84 @@ body {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
 }
 
+/* styles/globals.css */
+.wipe-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wipe-section {
+  position: relative;
+  overflow: hidden; /* Hide overflow to create a masking effect */
+  height: 100vh; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the mask */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Background color for visibility */
+}
+
+.grid-item {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.grid-item > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-item {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+
+.scroll-container {
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.scroll-content {
+  width: 200vw; /* Twice the viewport width for demonstration */
+  white-space: nowrap; /* Prevent content from wrapping */
+}
+
+.scontainer {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: yellow;
+}
+
+.lastContainer {
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

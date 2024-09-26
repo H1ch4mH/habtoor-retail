@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Noto_Serif as FontSerif } from "next/font/google";
+import { Lora as FontSerif } from "next/font/google";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fontSerif.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-serif-1`}
+        className={`${fontSerif.variable} ${geistSans.variable} ${geistMono.variable} relative antialiased font-serif-1`}
       >
         {children}
       </body>
